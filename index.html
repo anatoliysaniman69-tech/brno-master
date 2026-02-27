@@ -3,20 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BRNO MASTER</title>
+    <title>BRNO MASTER — Чоловік на годину в Брно</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #333; }
+        p { color: #666; font-size: 18px; }
+        .whatsapp-button {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+        }
+        .services {
+            text-align: left;
+            display: inline-block;
+            margin: 20px 0;
+        }
+    </style>
 
     <script>
     !function (w, d, t) {
       w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t.instance=function(){t._i||(t._i={});var n=e;return t._i[n]||(t._i[n]=[],t.methods.forEach(function(e){t._i[n][e]=function(){var o=[e].concat(Array.prototype.slice.call(arguments,0));t._i[n].push(o)}})),t._i[n]},t.load=function(e){var n="https://analytics.tiktok.com/i18n/pixel/events.js";t._i=t._i||{},t._i[e]=[],t._i[e]._u=n,t._t=t._t||{},t._t[e]=+new Date,t._o=t._o||{},t._o[e]=n;var o=d.createElement("script");o.type="text/javascript",o.async=!0,o.src=n+"?sdkid="+e+"&lib="+t;var a=d.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)}};
 
-      // Ваш підтверджений ID: D6GT1URC77U0025UE0FG
+      // Ваш Pixel-ID з кабінету
       ttq.load('D6GT1URC77U0025UE0FG');
       ttq.page();
     }(window, document, 'ttq');
     </script>
     </head>
 <body>
-    <h1>Сайт BRNO MASTER готовий до роботи з TikTok</h1>
-    <p>Піксель налаштовано. Тепер ви можете запускати рекламу.</p>
+
+    <div class="container">
+        <h1>BRNO MASTER</h1>
+        <p>Професійні послуги "Чоловік на годину" у місті Брно</p>
+        
+        <div class="services">
+            <ul>
+                <li>Дрібний побутовий ремонт</li>
+                <li>Монтаж полиць, дзеркал, карнизів</li>
+                <li>Ремонт та заміна замків</li>
+                <li>Збирання та ремонт меблів</li>
+                <li>Ремонт жалюзі та інші дрібні роботи</li>
+            </ul>
+        </div>
+
+        <p>Швидко, якісно та надійно!</p>
+
+        <a href="https://wa.me/420727931787" class="whatsapp-button" onclick="ttq.track('Contact')">
+            Написати у WhatsApp
+        </a>
+    </div>
+
 </body>
 </html>
