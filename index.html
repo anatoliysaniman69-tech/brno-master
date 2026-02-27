@@ -1,81 +1,59 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BRNO MASTER — Чоловік на годину в Брно</title>
+    <title>Hodinový manžel Brno — BRNO MASTER</title>
     
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1 { color: #333; }
-        p { color: #666; font-size: 18px; }
-        .whatsapp-button {
-            display: inline-block;
-            background-color: #25D366;
-            color: white;
-            padding: 15px 25px;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: bold;
-            font-size: 20px;
-            margin-top: 20px;
-            transition: background 0.3s;
-        }
-        .whatsapp-button:hover {
-            background-color: #128C7E;
-        }
-        .services {
-            text-align: left;
-            display: inline-block;
-            margin: 20px 0;
-        }
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; text-align: center; background-color: #f4f4f4; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { color: #333; margin-bottom: 10px; }
+        .subtitle { color: #666; font-size: 18px; margin-bottom: 20px; }
+        
+        .btn { display: block; width: 80%; margin: 15px auto; padding: 15px; text-decoration: none; border-radius: 30px; font-weight: bold; font-size: 20px; transition: 0.3s; }
+        
+        .call-button { background-color: #007bff; color: white; }
+        .call-button:hover { background-color: #0056b3; }
+        
+        .whatsapp-button { background-color: #25D366; color: white; }
+        .whatsapp-button:hover { background-color: #128C7E; }
+
+        .services { text-align: left; display: inline-block; margin: 20px 0; width: 90%; }
+        ul { padding-left: 20px; }
     </style>
 
     <script>
     !function (w, d, t) {
       w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t.instance=function(){t._i||(t._i={});var n=e;return t._i[n]||(t._i[n]=[],t.methods.forEach(function(e){t._i[n][e]=function(){var o=[e].concat(Array.prototype.slice.call(arguments,0));t._i[n].push(o)}})),t._i[n]},t.load=function(e){var n="https://analytics.tiktok.com/i18n/pixel/events.js";t._i=t._i||{},t._i[e]=[],t._i[e]._u=n,t._t=t._t||{},t._t[e]=+new Date,t._o=t._o||{},t._o[e]=n;var o=d.createElement("script");o.type="text/javascript",o.async=!0,o.src=n+"?sdkid="+e+"&lib="+t;var a=d.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)}};
-
-      // Ваш Pixel-ID з кабінету
+      
       ttq.load('D6GT1URC77U0025UE0FG');
       ttq.page();
     }(window, document, 'ttq');
     </script>
-    </head>
+</head>
 <body>
 
     <div class="container">
         <h1>BRNO MASTER</h1>
-        <p>Професійні послуги "Чоловік на годину" у місті Брно</p>
+        <p class="subtitle">Profesionální služby hodinového manžela v Brně</p>
         
         <div class="services">
             <ul>
-                <li>Дрібний побутовий ремонт</li>
-                <li>Монтаж полиць, дзеркал, карнизів</li>
-                <li>Ремонт та заміна замків</li>
-                <li>Збирання та ремонт меблів</li>
-                <li>Ремонт жалюзі та інші дрібні роботи</li>
+                <li>Drobné opravy v domácnosti</li>
+                <li>Montáž polic, zrcadel a garnýží</li>
+                <li>Výměna zámků a kování</li>
+                <li>Montáž a opravy nábytku</li>
+                <li>Opravy žaluzií a další práce</li>
             </ul>
         </div>
 
-        <p>Швидко, якісно та надійно!</p>
+        <a href="tel:+420727931787" class="btn call-button" onclick="ttq.track('Contact')">
+            Zavolat: +420 727 931 787
+        </a>
 
-        <a href="https://wa.me/420727931787" class="whatsapp-button" onclick="ttq.track('Contact')">
-            Написати у WhatsApp
+        <a href="https://wa.me/420727931787?text=Dobrý%20den,%20měl%20bych%20zájem%20o%20vaše%20služby" class="btn whatsapp-button" onclick="ttq.track('Contact')">
+            Napsat na WhatsApp
         </a>
     </div>
 
